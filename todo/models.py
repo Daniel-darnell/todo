@@ -12,6 +12,9 @@ class Profile(models.Model):
     def save_profile(self):
         self.save
 
+    def delete_user(self):
+        self.delete()
+
 class Todo(models.Model):
     title = models.CharField(max_length=150)
     description = models.TextField()
